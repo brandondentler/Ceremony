@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<title>Brandon Dentler's Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('/images/aboutphoto.jpg');
+  min-height: 60%;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+.heading {
+    font-size: 100px;
+}
+
+.indent {
+    margin-left: 3%;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top" style="color:black">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="Brandon UX Resume.pdf" target="blank" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-paperclip"></i> RESUME</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="about.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-left" style="white-space:normal; margin-left: 5%;">
+    <span class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity" style="background-color: #69696b; color: white;" > HELLO, I'M <b style="font-size: 150%;"> BRANDON DENTLER </b> </span>
+    <br><br><br>
+    <span class="w3-center w3-padding-large w3-wide w3-animate-opacity" style="background-color: #69696b; color: white;">A UX Designer </span>
+  </div>
+</div>
+
+<!-- DESIGN OPPURTUNITY -->
+<div class="w3-content w3-container w3-padding-64">
+  
+    <h2>About Me</h2>
+        <p class="indent"> 
+            I'm from small-town Indiana and attended Purdue University for UX Design. I'm a goofball at heart and always go out of my way to help others. I am an avid gamer and love to play open-world games. Some of my favorites include: Fallout 4, Far Cry 4, Risk of Rain 2, and the Assassain's Creed series. I also love to cook up a good meal! My favorite thing to make is a nice steak with some compound garlic butter. In my free-time when I'm not playing games with my friends, you could catch me watching my favorite TV show, Mad Men, or a Marvel Movie. </p>
+        
+
+    <h2> What does UX Mean to Me? </h2>
+        <h5 class="indent"> Designing with <b> Empathy </b> for the <b> User </b>
+        </h5>
+        <p class="indent"> The definition of UX varies between who you ask. There is no definite definition. With that being said, across the board, designers describe UX as designing for the user's experience (hence the name).</p>
+  
+    <h5 class="indent"> So how would I define UX design and the experience it includes? </h5>
+        <p class="indent">
+            Design is not something that we are born into. It is not something we are immediately good at. It takes years of experience, knowledge and engagement to develop the skills. It is about maturity. Not just mental maturity or age, but in the social and cultural realm.
+            </p>
+
+            <h2> The Nature of Design </h2>
+    <p class="indent">
+        UX Design is about designing a specific experience that is empathetically-driven. It takes into account not only the aesthetic or function, but the emotions of delight and ease-of-use. It's not about the process, but the journey and the emotions someone feels along that journey.
+        </p>
+
+            <h5 class="indent"> Knowledge Is Key</h5>
+                <p class="indent"> 
+                    If there is one thing that I would have never expected from myself, it is my willingness and eagerness to read design books. Whether these are assigned through class or personal preference, so much can be learned.
+                </p>
+            
+                <div class="w3-row w3-padding-64">
+                    <div class="w3-col m6">
+                        <br><br><br>
+                        <h4 class="w3-padding-16"> Design is like a bookcase. Gaining knowledge of design is gained one step (or book) at a time. And it isn't until you can step back and view the entirety of the "bookcase" that you can realize how far you've come. It isn't about a handful of activites or core elements, but the library of knowledge you can access.
+                        </h4> 
+                    </div>
+                    <div class="w3-col m6">
+                        <img src="/images/bookcase.jpg" class="w3-round w3-image" style="height: 75%; width: 75%;">
+                      </div>
+                  </div>
+
+</div>
+
+<!--FOOTER-->
+<footer class="w3-center w3-padding-32" style="background-color: #69696b">
+  <a href="#home" class="w3-button w3-white"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.instagram.com/brandondentler/" target="_blank"> <i class="fa fa-instagram w3-hover-opacity w3-text-white"> </i> </a>
+    <a href="https://www.linkedin.com/in/brandon-dentler" target="_blank"> <i class="fa fa-linkedin w3-hover-opacity w3-text-white"></i> </a>
+    <p class="w3-text-white" style="font-size: 60%;"> &#169 Brandon Dentler 2021  </p>
+</div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

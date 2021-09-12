@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<title>Brandon Dentler - Dolby</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('/images/dolbyhead.jpeg');
+  min-height: 60%;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+.heading {
+    font-size: 100px;
+}
+
+.bold {
+    color: black;
+}
+
+.indent {
+    margin-left: 3%;
+}
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top" style="color:black">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="Brandon UX Resume.pdf" target="blank" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-paperclip"></i> RESUME</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="about.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-left" style="white-space:normal; margin-left: 5%;">
+            <span class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity" style="background-color: #69696b; color: white;" >DOLBY ATMOS </span>
+    <br><br><br>
+            <span class="w3-center w3-padding-large w3-wide w3-animate-opacity" style="background-color: #69696b; color: white;">Fall Semester 2020 </span>
+        </div>
+    </div>
+
+<!-- DESIGN OPPURTUNITY -->
+    <div class="w3-content w3-container w3-padding-64">
+  
+        <h2>Project Brief</h2>
+            <p class="indent"> 
+                During the Fall 2020 semester, my team worked with Dolby on a project as part of our Experience Studio course at Purdue University. We were initially tasked to create a new tool that enabled gamers to use Dolby's Atmos sound program with ease. After a long research stage, the team found that <b class="bold"> creating a digital sound mixer widget through Windows Game bar would provide one central hub for sound settings and customization that has community capabilities for instant sharing and use as well as having easy user adoption to the widget. </b> 
+            </p>
+
+        <h4> My Role </h4>
+            <p class="indent"> 
+                I co-led a team of six UX Design students and worked closely with multiple sponsors on the Dolby team. <b class="bold"> I was responsible for conducting interviews, synthesizing findings from stakeholders, and designing the wireframes for our finalized concept. </b> As a team lead, I mentored and delegated tasks to first-year students throughout the course of the semester as well as guided the overall direction of the project. 
+            </p>
+  
+        <h4> COVID Pandemic </h4>
+            <p class="indent"> 
+                Our design opportunity for this semester was to focus on the impact of COVID on gamers. The social environment is essential in gaming. And because of COVID, this environment has been impacted on a personal level as well as the entirety of the gaming community. As a team, we found an opportunity to focus on community support in a time where people are isolating at an unprecedented level. As the semester continued, our user group narrowed further.
+            </p>
+    </div>
+   
+<!--SOLUTION WALKTHROUGH HEADING-->
+    <div class="w3-padding-64 w3-container" style="background-color: #69696b; color: white;">
+        <h2>SOLUTION WALKTHROUGH </h2>
+    </div>
+
+<!--WALKTHROUGH SECTION-->
+    <div class="w3-center w3-padding-16" style="margin-top: 5%;">
+        <img src="/images/dolby1.png" style="height: 60%; width: 60%;">
+    </div>
+        <div class="w3-content w3-padding-large">
+            <h5 class="w3-center" style="text-align: center;">
+                Users are prompted to adjust their sound settings while they wait for the game to load.
+                <br>
+                By pressing the correct hotkeys (a combination of keys that when pressed performs a task quickly), users activate <b class="bold"> Dolby Sound Presets Widget in Windows Game Bar. </b>
+            </h5>
+        </div>
+
+<!--WALKTHROUGH SECTION-->
+    <div style="background-color: #69696b; color: white;">
+        <div class="w3-center w3-padding-16" style="margin-top: 5%;">
+            <img src="/images/dolby3.png" class="w3-half indent" style="height: 40%; width: 40%;">
+            <img src="/images/dolby6.png" class="w3-half" style="height: 40%; width: 40%; margin-left: 10%;">
+        </div>
+        <div class="w3-content" style="margin-top: 45%;">
+        <h5 class="w3-center" style="text-align: center;">
+            Now, Dolby Sound Presets Widget is launched.
+            <br><br>
+            <b class="bold" style="color: white;"> Favorites are organized by Most Used and Recommended. </b> Subcategories Recent, Playtime, Liked, and Your Sets help users decide which preset will fit their needs. Users can Preview the preset and see and hear sounds change in real-time. Users can Apply the preset to their game
+            <br>
+            <b class="bold" style="color: white;"> Users can Favorite individual sounds within a sound category. </b> Starring is to put that slider (Master Volume) at the top of the list, pinning it as important
+        </h5>
+      </div>
+    </div>
+<!--WALKTHROUGH SECTION-->
+    <div class="w3-center w3-padding-16" style="margin-top: 5%;">
+        <img src="/images/dolby4.png" style="height: 40%; width: 40%;">
+    </div>
+        <div class="w3-content">
+        <h5 class="w3-center" style="text-align: center;">
+            <b class="bold"> Community is organized by Popular presets and presets a gamer’s Friends are currently using. </b> When clicking a specific preset, the number of likes it has is visible. Users are able to Preview and Apply the sound settings if they desire. Previewing a preset enables users to visually compare how their sounds would change. Users can also hear how the settings change game sound.
+        </h5>
+        </div>
+
+<!--WALKTHROUGH SECTION-->
+    <div style="background-color: #69696b; color: white;">
+       <div class="w3-center w3-padding-16" style="margin-top: 5%;">
+        <img src="/images/dolby7.png" style="height: 40%; width: 40%;">
+        </div>
+        <div class="w3-content">
+        <h5 class="w3-center" style="text-align: center;">
+            Navigating to the <b class="bold" style="color: white;">Friends section in Community </b> brings up this page.
+            <br> 
+            Users are able to see what settings their friends are currently using for the corresponding game. They can choose to apply those settings to their own game as well.
+        </h5>
+      </div>
+    </div>
+<!--WALKTHROUGH SECTION-->
+    <div class="w3-center w3-padding-16" style="margin-top: 5%;">
+        <img src="/images/dolby5.png" style="height: 40%; width: 40%;">
+    </div>
+        <div class="w3-content">
+        <h5 class="w3-center" style="text-align: center;">
+            Clicking the + icon brings up the <b class="bold"> Create menu. </b>
+            <br>
+            Here, users are able to see a library of presets they’ve made. They can Edit an already-existing preset, and manipulate sound using sliders on the right. Once they are happy with their edits, they can hit Save. <b class="bold"> Share enables users to publish their preset to the Community tab. </b> An animation will show their preset moving to the Community tab
+            <br>
+            If users want to Create a new preset, they can click the + icon at the bottom. This will bring up a new field to save presets.
+        </h5>
+        </div>
+
+ <!--WALKTHROUGH SECTION-->
+    <div style="background-color: #69696b; color: white;">
+    <div class="w3-center w3-padding-16" style="margin-top: 5%;">
+        <img src="/images/dolby9.png" style="height: 40%; width: 40%;">
+    </div>
+    <div class="w3-content">
+        <h5 class="w3-center" style="text-align: center;">
+            Users can name their preset and description, select the sound levels for it, and...<b class="bold" style="color: white;"> Publish the preset to their personal library </b>
+        </h5>
+    </div>
+    </div>
+
+<!--RESEARCH BANNER-->
+    <div class="w3-padding-64 w3-container" style="background-color: #69696b; color: white; margin-top: 5%;">
+        <h2>RESEARCH </h2>
+    </div>
+
+<!--PROJECT SUMMARY-->
+    <div class="w3-content w3-container w3-padding-64">
+        <p class="indent">
+            Our first plan of action was to narrow our problem scope through literature reviews relevant to our problem space. We hoped to have a better understanding of this space, and possibly identify some surface-level traits that gamers have. <b class="bold"> The areas identified through the literature review were: </b>
+        </p>
+    <ul class="indent">
+        <li> Types of Gamers </li>
+        <li> Headphone Usage </li>
+        <li> Sound Softwares </li>
+        <li> Video Game Market </li>
+        <li> COVID-19 Effects </li>
+    </ul>
+
+    <p class="indent"> 
+        From this, we learned a few things: 
+    </p>
+    <ol>
+        <li> Gamer types are not on a linear spectrum from casual to competitive, but are characterized by their behaviors. </li>
+        <li> Surround sound is especially crucial for competitive games. </li> 
+        <li> Online gaming activity is on the rise following the pandemic. </li>
+        <li> Having a social aspect is important for many gamers. </li>
+    </ol>
+
+    <h4> Survey </h4>
+        <p class="indent"> 
+            When we realized that gamers could be categorized with behaviors, we wanted a way to identify those behaviors and design around our findings. We figured the best way to do this was though a survey, as it would help us solidify types of gamers with raw data. We created a google survey that sought out to find these gamer behaviors so that we could categorize and design around them. We sent this survey through reddit, discord, and our peers, and ended up with 239 responses.
+        </p>
+
+    <div class="w3-center">
+        <img src="/images/dolbycharts.jpg" style="width: 75%; height: 75%;">
+    </div>
+
+    <h3> 
+        <i> 
+            “During lockdown I was completely free, that's why I could devoted my time to games.”
+            <br><br>
+            “Though I do try to play with friends when I can because it's been really fun.”
+            <br><br>
+            ”Uneven volume levels between background music, voices, and ambient sounds” 
+        </i>
+    </h3>
+
+    <div class="w3-padding-32">
+        <h4> My Role</h4>
+            <p class="indent"> 
+                To gain some more insights into those who took the survey, we conducted 18 interviews from the survey respondants. <b class="bold"> We wanted to gain insight from gamers’ first-hand experiences with an emphasis on gaming behaviors and sound experiences. </b>
+                <br>
+                From this, we learned of 6 categories of behaviors, seen below.
+            </p>
+
+    <div class="w3-center">
+        <img src="/images/dolbyinterviews.jpg" style="width: 75%; height: 75%;">
+    </div>
+
+    <div class="w3-padding-32">
+        <p class="indent"> 
+            Our main insights included:
+        </p>
+        
+        <ul class="indent">
+            <li> <b class="bold"> Gaming is an emotional experience </b> </li>
+            <li> <b class="bold"> Gamers are influenced by their friends’ behaviors </b> </li>
+            <li> <b class="bold"> Multiplayer PC gaming has the most opportunity for innovation </b> </li>
+            <li> <b class="bold"> Balancing sound is a main pain point when playing with others </b> </li>
+        </ul>
+    </div>
+    </div>
+    </div>
+
+    <div class="w3-padding-64 w3-container" style="background-color: #69696b; color: white;">
+        <h2> CONCEPT GENERATION </h2>
+    </div>
+
+    <div class="w3-padding-64">
+        <div class="w3-content w3-container w3-padding-64">
+            <h4> Problem Framing </h4>
+                <h5 class="indent" style="text-align: center;"> 
+                    <b class="bold"> PC gamers </b> playing online games with their friends need a way to <b class="bold"> balance </b> the core audio inputs so that they can customize the gaming experience to their <b class="bold">sound preferences. </b> 
+                </h5>
+
+        <ol class="indent">
+            <li> We picked <b class="bold">PC gamers </b> as these made up a majority of our interview & survey respondents who reported behavior changes </li>
+            <li> We focused on <b class="bold">balancing audio </b> inputs because this was the biggest frustration among the gamers we talked to</li>
+            <li> Our research made it clear to us that each gamer has their own <b class="bold"> unique preferences </b> to how they want to set their sound levels while gaming, depending on factors like type of video game or number of players </li>
+        </ol>
+    
+        <h4> Carousal Sketching </h4>
+            <p class="indent"> 
+                Upon review of previous individual sketches and sponsor clarification and guidance, we moved into <b class="bold"> rounds of collaborative sketching. </b>
+            </p>
+
+        <div class="w3-center">
+            <img src="/images/dolbycarousal.jpg" style="width: 75%; height: 75%;">
+        </div>
+            <figcaption style="text-align: center;"> 
+                This current sketch is highlighted in particular because there are a few key features we brought towards our final concepts. To summarize this sketch, some of the important features include ability to adjust individual sound inputs, quick way to open the sound board, and a sound mixing overlay where we could adjust game sound and have presets. 
+            </figcaption>
+    
+            <p class="indent"> 
+                Other sketching themes that were highlighted during this sketching session include: 
+            </p>
+            <ul class="indent">
+                <li> Sound Sliders </li>
+                <li> Presets </li>
+                <li> Internal and External Sounds </li>
+                <li> Digital Sound Mixer </li>
+                <li> Physical Sound Board </li>
+            </ul>
+
+            <h4> Concept Package </h4>
+
+            <p class="indent"> 
+                After presenting our carosual sketches to the sponsors, we found it best that our next step would be a concept package to be sent to the Dolby design team. For this concept package, we wanted to generate 6 different concepts with no constraints. We wanted them to be blue-sky ideas that were focused on immediate solutions, short-term, and long-term. 
+            </p>
+
+    <div class="w3-center">
+        <img src="/images/dolbysketches.jpg" style="width: 75%; height: 75%;">
+    </div>
+    <p class="indent"> 
+        Concepts generated are as follows (starting at top left):
+    </p>
+        <ol class="indent">
+            <li> Audio and Visual Effects</li>
+            <li> Digital Sound Mixer Overlay </li>
+            <li> Sound Gloves </li>
+            <li> DIY Physical Sound Board </li>
+            <li> Gaming Voice Assistant </li>
+            <li> Ambisonic Dome </li>
+        </ol>
+
+        <h5 class="bold" style="text-align: center;">
+            As a team, as well as the Dolby Design team, we took a vote to which concept we should move forward with. The Digital Sound Mixer Overlay was the majority vote and from here we were to narrow our ideation to that concept.
+        </h5>
+        </div>
+    </div>
+
+<!--REFLECTION BANNER-->
+    <div class="w3-padding-64 w3-container" style="background-color: #69696b; color: white;">
+        <h2> REFLECTION </h2>
+    </div>
+    <div class="w3-padding-64">
+        <div class="w3-content w3-container w3-padding-64">
+            <h4> 
+                This project was a great learning experience for me. This semester was my second time being a co-lead and I brought many aspects of what I learned from my previous co-lead expereince. Although the COVID pandemic was still a major factor of how we conducted the team for the semester, we adapted and overcame. 
+            </h4>
+
+            <h4> 
+                Working with Dolby this semester was a major honor. Because of my interest in video games, this project was right in my wheelhouse. I enjoyed every aspect of this project. I also couldn't have had such a wonderful time without the team that I had. We all tried our hardest to meet in-person as much as we could. 
+            </h4>
+        </div>
+    </div>
+
+<!--DOCUMENTATION BUTTON-->
+    <div class="w3-content w3-container w3-padding-64">
+        <div>
+            <h3>View the Documentation!</h3>
+        </div>
+            <a href="https://drive.google.com/file/d/1zP-L9qW6Jj0qBkvHBvWS6IqEVTTOeEYQ/view" target="blank" class="w3-btn" style="background-color: #69696b; color: white;">
+                Click Me!
+            </a>
+    </div>
+
+<!--FOOTER-->
+<footer class="w3-center w3-padding-32" style="background-color: #69696b">
+  <a href="#home" class="w3-button w3-white"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.instagram.com/brandondentler/" target="_blank"> <i class="fa fa-instagram w3-hover-opacity w3-text-white"> </i> </a>
+    <a href="https://www.linkedin.com/in/brandon-dentler" target="_blank"> <i class="fa fa-linkedin w3-hover-opacity w3-text-white"></i> </a>
+    <a href="affinity.html" class="w3-button w3-white" style="float: right;"> Next Project <i class="fa fa-arrow-right w3-margin-right"></i></a>
+    <a href="vr.html" class="w3-button w3-white" style="float: left;"><i class="fa fa-arrow-left w3-margin-right"></i>Previous Project</a>
+    <p class="w3-text-white" style="font-size: 60%;"> &#169 Brandon Dentler 2021  </p>
+</div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
